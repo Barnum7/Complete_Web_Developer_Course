@@ -3,23 +3,43 @@
 <head>
 	<title>Learning CSS</title>
 	<style type="text/css">
-		.bluebox {
-			background-color: blue;
-			width: 300px;
+		.purplebox {
+			background-color: #7401DF;
 			width: 200px;
+			position: fixed;
+			z-index: 2;
+		}
+		.redbox {
+			background-color: red;
+			width: 200px;
+			height: 300px;
+			position: relative;
+			left: 100px;
+			z-index: 1;
 		}
 	</style>
 </head>
 <body>
 	<h1>Learning CSS</h1>
-<div class="bluebox">
-	<h2>This is inside the Div</h2>
+<div class="purplebox">
+	<h2>This is inside Purple Box!</h2>
 		<p>I'm inside a div!</p>
 		<p>Yeah me too!</p>
 </div>
-
-<h2>This is outside the div</h2>
+<div class="redbox">
+<h2>This is Red Box div</h2>
 	<p>I'm not like the other reindeer</p>
+</div>
+<div class="redbox">
+<h2>This is Red Box div</h2>
+	<p>I'm not like the other reindeer</p>
+</div>
+<div class="redbox">
+<h2>This is Red Box div</h2>
+	<p>I'm not like the other reindeer</p>
+</div>
+<div class="clear">
+	<p>I'm underneath the floated divs!</p>
 </div>
 </body>
 </html>
